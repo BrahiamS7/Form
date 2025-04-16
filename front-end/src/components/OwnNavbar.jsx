@@ -16,7 +16,10 @@ const OwnNavbar = () => {
           <Nav.Link href="/Show">Show</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/Form">Form</Nav.Link>
+          <Nav.Link href="/Form">Registro</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Login">Login</Nav.Link>
         </Nav.Item>
       </Nav>
     </div>

@@ -4,7 +4,7 @@ import { Container, Form, Button, Fade } from "react-bootstrap";
 import OwnNavbar from "./OwnNavbar";
 import OwnFooter from "./OwnFooter";
 
-const Add = () => {
+const Login = () => {
   const [Usuario, setUsuario] = useState("");
   const [Contraseña, setContraseña] = useState("");
   const [respuesta, setRespuesta] = useState("");
@@ -47,7 +47,7 @@ const Add = () => {
             className="w-100"
             style={{ maxWidth: "400px" }}
           >
-            <h1>Registro</h1>
+            <h1>Iniciar Sesion</h1>
             <Form.Group>
               <Form.Label>Usuario</Form.Label>
               <Form.Control
@@ -81,4 +81,4 @@ const Add = () => {
   );
 };
 
-export default Add;
+export default Login;
