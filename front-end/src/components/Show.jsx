@@ -21,26 +21,29 @@ const Show = () => {
     <>
       <OwnNavbar />
       <div className="d-flex justify-content-center text-center vh-100">
-        {users.length>0?<Table striped bordered hover style={{ maxWidth: "500px" }}>
-          <thead>
-            <tr>
-              <th>Usuario</th>
-              <th>Contraseña</th>
-            </tr>
-          </thead>
-         
-            {users.map((e, i) => (
-              <tbody>
+        {users.length > 0 ? (
+          <Table striped bordered hover style={{ maxWidth: "500px" }}>
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {users.map((e, i) => (
                 <React.Fragment key={i}>
                   <tr>
                     <td>{e.username}</td>
                     <td>{e.password}</td>
                   </tr>
                 </React.Fragment>
-              </tbody>
-            ))}
-        </Table>:<p style={{maxWidth:"500px"}} >No hay usuarios por mostrar!</p>}
-        
+              ))}
+            </tbody>
+          </Table>
+        ) : (
+          <p style={{ maxWidth: "500px" }}>No hay usuarios por mostrar!</p>
+        )}
       </div>
       <OwnFooter />
     </>

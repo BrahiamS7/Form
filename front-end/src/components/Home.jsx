@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     <OwnNavbar/>
-      <Container className="flex-column text-center p-5 flex-grow-1">
+      <Container className="flex-column text-center p-5 flex-grow-1" style={{minHeight:'580px'}}>
         <Row className="flex-column">
           <Col>
             <h1>Pagina de inicio</h1>

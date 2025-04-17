@@ -10,17 +10,12 @@ const OwnNavbar = () => {
     <div style={{ pageStyle }}>
       <Nav className="p-3" fill variant="underline">
         <Nav.Item>
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/Home">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/Show">Show</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Form">Registro</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Login">Login</Nav.Link>
-        </Nav.Item>
+
       </Nav>
     </div>
   );

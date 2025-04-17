@@ -16,6 +16,7 @@ const Add = () => {
 
     fetch("http://localhost:3000/api/addUser", {
       method: "POST",
+      credentials:'include',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ Usuario, Contraseña }),
     })
@@ -38,13 +39,11 @@ const Add = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <OwnNavbar />
-
       <div className="flex-grow-1 d-flex flex-column">
         <Container className="flex-grow-1 d-flex justify-content-center align-items-center">
           <Form
             onSubmit={handleSubmit}
-            className="w-100"
+            className="w-100 d-flex flex-column"
             style={{ maxWidth: "400px" }}
           >
             <h1>Registro</h1>
@@ -70,6 +69,7 @@ const Add = () => {
             <Button className="mt-4 w-100" variant="primary" type="submit">
               Enviar
             </Button>
+            <a href="/Login" className="text-center mt-2 text-primary text-opacity-75">ó inicia sesion</a>
           </Form>
         </Container>
       </div>
