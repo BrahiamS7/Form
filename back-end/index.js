@@ -3,7 +3,6 @@ import express from "express";
 import cors from "cors";
 import env from "dotenv";
 import pg from "pg";
-import bodyParser from "body-parser";
 import bcrypt from "bcrypt";
 import passport from "passport";
 import { Strategy } from "passport-local";
